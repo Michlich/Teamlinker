@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamLinker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <!-- Ваша навигационная панель остаётся без изменений -->
+        <a href="C:\Users\nikit\OneDrive\Рабочий стол\axelerator_site\index.html" class="nav-logo" class="nav-logo">
+            <img src="C:\Users\nikit\OneDrive\Рабочий стол\axelerator_site\web-svgrepo-com.svg" alt="TeamLinker Logo" class="logo-img">
+            <h3>TeamLinker</h3>
+        </a>
+        <div class="nav-links">
+            <a href="#" id="searchTeam">Поиск команды▼</a>
+            <div id="teamPopup" class="popup-content">
+                <p>Выберите категорию команды</p>
+                <button>Для участников</button>
+                <button>Для лидеров</button>
+            </div>
+            <a href="#">Мои объявления</a>
+            <a href="#">Объявления</a>
+            <a href="contact.html">Связаться с нами</a>
+        </div>
+        <div class="nav-auth">
+            <a href="login.html" class="auth-link">Вход</a>
+            <a href="signup.html" class="auth-button">Регистрация</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="grid-container">
+            <div class="search-panel">
+                <input type="search" placeholder="Поиск...">
+                <button class="tab">соискатели</button>
+                <button class="tab">команды</button>
+            </div>
+            <div class="cards-container">
+                <!-- Карточки -->
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <!-- Повторите <div class="card"></div> для количества карточек, которое вы хотите -->
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('searchTeam').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            var popup = document.getElementById('teamPopup');
+            popup.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

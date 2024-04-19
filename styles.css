@@ -1,0 +1,196 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px;
+}
+
+.nav-logo {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #393939;
+	font-weight: bold;
+	padding: 8px 0;
+}
+
+.logo-img {
+	height: 40px;
+	margin-right: 10px;
+}
+
+.nav-links, .nav-auth {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.nav-links a, .nav-auth a {
+	text-decoration: none;
+	color: #393939;
+	padding: 8px 16px;
+	font-weight: bold;
+	position: relative;
+}
+
+.nav-links a:hover, .nav-auth a:hover, .auth-button:hover {
+	color: #000000 !important;
+}
+
+.auth-link {
+	margin-right: 8px;
+}
+
+.auth-button {
+	width: 110px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #ffffff !important; /* Белый цвет текста */
+	background-color: #5551FF; /* Предполагается, что у кнопки уже есть фоновый цвет */
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color .3s ease;
+}
+
+
+.popup-content {
+	display: none; /* Скрыть до активации */
+	position: absolute;
+	background-color: #fff; /* Белый фон */
+	min-width: 160px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Тень для объемности */
+	padding: 12px 16px;
+	z-index: 1;
+	top: 100%; /* Расположение под кнопкой */
+	left: 21%; /* Отцентровка относительно кнопки */
+	transform: translateX(-50%); /* Точное центрирование */
+	border: 1px solid #000; /* Черная обводка */
+	border-radius: 4px; /* Скругленные углы */
+}
+
+.popup-content.show {
+	display: block; /* Показать при активации */
+}
+
+.popup-content button {
+	width: 100%; /* Заполнение горизонтального пространства */
+	padding: 8px 12px;
+	border: none; /* Убрать стандартные границы */
+	background: none; /* Прозрачный фон */
+	text-align: left; /* Текст выравнивается по левому краю */
+	color: #000000; /* Оранжевый цвет текста */
+	font-size: 1rem; /* Размер шрифта */
+	margin: 5px 0; /* Отступы между кнопками */
+	cursor: pointer; /* Курсор в виде руки при наведении */
+	transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+.popup-content button:hover {
+	background-color: #f3f3f3; /* Светло-серый фон при наведении */
+}
+
+/* Дополнительные стили для вашего файла styles.css */
+
+.search-panel {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.search-panel input[type="search"] {
+	padding: 10px;
+	margin-right: 10px;
+	width: 400px; /* Задайте нужную ширину */
+	border: 1px solid #ccc;
+	border-radius: 20px;
+}
+
+.search-panel .tab {
+	padding: 10px 20px;
+	border: none;
+	background-color: #f7f7f7;
+	cursor: pointer;
+	border-radius: 20px;
+	margin-left: 5px;
+}
+
+.search-panel .tab:hover {
+	background-color: #e7e7e7;
+}
+
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start; /* Измените на start для выравнивания содержимого с начала */
+	width: 100%; /* Убедитесь, что контейнер использует всю доступную ширину */
+	padding: 20px; /* Добавьте padding по желанию */
+}
+html, body {
+	overflow-x: hidden;
+}
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	width: 100%; /* Используйте 100% ширины для использования всего доступного пространства */
+	margin: 0 auto; /* Если есть margin auto, его стоит убрать или изменить */
+}
+
+
+.card {
+    background-color: #fff;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    /* Добавьте любые дополнительные стили, которые хотите для карточек */
+}
+/* Стили для главного баннера */
+.hero-section {
+	text-align: center; /* Выравнивание текста по центру */
+	padding: 50px 20px; /* Паддинг для секции */
+	background-color: #fff; /* Белый фон, можете выбрать другой */
+	color: #333; /* Цвет текста */
+}
+
+.hero-heading {
+	font-size: 3em; /* Размер шрифта для заголовка */
+	margin-bottom: 20px; /* Отступ снизу для заголовка */
+	font-weight: bold; /* Жирность шрифта */
+	line-height: 1.2; /* Межстрочный интервал */
+}
+
+.brand-name {
+	color: #5551FF; /* Цвет названия вашего бренда */
+}
+
+.hero-subheading {
+	font-size: 1.5em; /* Размер шрифта для подзаголовка */
+	margin-bottom: 30px; /* Отступ снизу для подзаголовка */
+}
+
+.cta-button {
+	padding: 15px 30px; /* Отступы внутри кнопки */
+	font-size: 1.2em; /* Размер шрифта для кнопки */
+	background-color: #5551FF; /* Фоновый цвет кнопки */
+	color: white; /* Цвет текста кнопки */
+	border-radius: 5px; /* Скругление углов кнопки */
+	text-decoration: none; /* Убрать подчеркивание текста */
+	transition: background-color 0.3s ease; /* Плавность перехода цвета */
+}
+
+.cta-button:hover {
+	background-color: #393939; /* Цвет кнопки при наведении */
+	text-decoration: none; /* Убрать подчеркивание текста */
+}
