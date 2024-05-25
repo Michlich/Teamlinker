@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
+<meta charset="windows-1251">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us</title>
 <style>
@@ -16,20 +16,20 @@
     padding: 20px;
     background: white;
     display: flex;
-    align-items: center; /* РЈР±РµРґРёС‚РµСЃСЊ, С‡С‚Рѕ СЌР»РµРјРµРЅС‚С‹ РІС‹СЂРѕРІРЅРµРЅС‹ РїРѕ С†РµРЅС‚СЂСѓ */
-    justify-content: flex-start; /* Р’С‹СЂР°РІРЅРёРІР°РЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РІ РЅР°С‡Р°Р»Рµ РєРѕРЅС‚РµР№РЅРµСЂР° */
+    align-items: center; /* Убедитесь, что элементы выровнены по центру */
+    justify-content: flex-start; /* Выравнивание элементов в начале контейнера */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .header-logo img {
     height: 50px;
-    /* РЈРґР°Р»РµРЅРёРµ margin-right Рё РґРѕР±Р°РІР»РµРЅРёРµ margin РґР»СЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ РІС‹СЂР°РІРЅРёРІР°РЅРёСЏ */
-    margin-right: 15px; /* РћР±РµСЃРїРµС‡РёРІР°РµС‚ РЅРµР±РѕР»СЊС€РѕРµ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РјРµР¶РґСѓ Р»РѕРіРѕС‚РёРїРѕРј Рё С‚РµРєСЃС‚РѕРј */
+    /* Удаление margin-right и добавление margin для автоматического выравнивания */
+    margin-right: 15px; /* Обеспечивает небольшое пространство между логотипом и текстом */
   }
 
   .header-logo a {
-    display: flex; /* РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ flexbox РґР»СЏ РІС‹СЂР°РІРЅРёРІР°РЅРёСЏ С‚РµРєСЃС‚Р° Рё РёР·РѕР±СЂР°Р¶РµРЅРёСЏ */
-    align-items: center; /* Р¦РµРЅС‚СЂРёСЂРѕРІР°РЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РїРѕ РІРµСЂС‚РёРєР°Р»Рё */
+    display: flex; /* Использование flexbox для выравнивания текста и изображения */
+    align-items: center; /* Центрирование элементов по вертикали */
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -90,18 +90,19 @@
 <body>
 <div class="header-logo">
   <a href="index.html">
-    <img src="C:\Users\nikit\OneDrive\Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»\axelerator_site\web-svgrepo-com.svg" alt="Logo">
-    <span>TeamLinker</span> <!-- РР·РјРµРЅРµРЅРѕ РЅР° span РґР»СЏ Р±РѕР»РµРµ С‚РѕС‡РЅРѕРіРѕ РєРѕРЅС‚СЂРѕР»СЏ РЅР°Рґ СЃС‚РёР»СЏРјРё -->
+    <img src="web-svgrepo-com.svg" alt="Logo">
+    <span>TeamLinker</span> <!-- Изменено на span для более точного контроля над стилями -->
   </a>
 </div>
 <div class="contact-container">
-  <h2>РЎРІСЏР·Р°С‚СЊСЃСЏ СЃ РЅР°РјРё</h2>
+  <h2>Связаться с нами</h2>
   <form class="contact-form">
-    <input type="text" placeholder="Р’Р°С€Рµ РёРјСЏ">
-    <input type="email" placeholder="Р’Р°С€ E-mail">
-    <textarea placeholder="Р’Р°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ"></textarea>
-    <button type="submit">РћС‚РїСЂР°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ</button>
+    <input type="text" placeholder="Ваше имя">
+    <input type="email" placeholder="Ваш E-mail">
+    <textarea placeholder="Ваше сообщение"></textarea>
+    <button type="submit">Отправить сообщение</button>
   </form>
 </div>
 </body>
 </html>
+

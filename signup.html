@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
+<meta charset="Windows-1251">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration Form</title>
 <style>
@@ -13,28 +13,28 @@
     background: #f0f0f0;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    position: relative; /* Р”Р»СЏ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёСЏ Р»РѕРіРѕС‚РёРїР° */
+    position: relative; /* Для позиционирования логотипа */
   }
 
   .header-logo {
     position: absolute;
-    top: 10px; /* Р РµРіСѓР»РёСЂРѕРІРєР° СЂР°СЃСЃС‚РѕСЏРЅРёСЏ СЃРІРµСЂС…Сѓ */
-    left: 10px; /* Р РµРіСѓР»РёСЂРѕРІРєР° СЂР°СЃСЃС‚РѕСЏРЅРёСЏ СЃР»РµРІР° */
+    top: 10px; /* Регулировка расстояния сверху */
+    left: 10px; /* Регулировка расстояния слева */
     display: flex;
     align-items: center;
   }
 
   .header-logo img {
-    height: 30px; /* Р’С‹СЃРѕС‚Р° Р»РѕРіРѕС‚РёРїР° */
+    height: 30px; /* Высота логотипа */
   }
 
   .header-logo a {
     text-decoration: none;
-    color: black; /* Р¦РІРµС‚ С‚РµРєСЃС‚Р° РёР·РјРµРЅРµРЅ РЅР° С‡РµСЂРЅС‹Р№ */
+    color: black; /* Цвет текста изменен на черный */
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
-    align-items: center; /* Р¦РµРЅС‚СЂРёСЂРѕРІР°РЅРёРµ С‚РµРєСЃС‚Р° РїРѕ РІРµСЂС‚РёРєР°Р»Рё */
+    align-items: center; /* Центрирование текста по вертикали */
   }
 
   .registration-container {
@@ -43,7 +43,7 @@
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     width: 350px;
-    margin-top: 60px; /* Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РґР»СЏ Р»РѕРіРѕС‚РёРїР° */
+    margin-top: 60px; /* Дополнительное пространство для логотипа */
   }
 
   .tab {
@@ -86,21 +86,21 @@
 <body>
 <div class="header-logo">
   <a href="index.html">
-    <img src="C:\Users\nikit\OneDrive\Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»\axelerator_site\web-svgrepo-com.svg" alt="Logo">
+    <img src="web-svgrepo-com.svg" alt="Logo">
     TeamLinker
   </a>
 </div>
 <div class="registration-container">
   <div class="tab">
-    <div><a href="login.html">Р’РҐРћР”</a></div>
-    <div class="active">Р Р•Р“РРЎРўР РђР¦РРЇ</div>
+    <div><a href="login.html">ВХОД</a></div>
+    <div class="active">РЕГИСТРАЦИЯ</div>
   </div>
-  <form>
-    <input type="text" placeholder="РќР°Р·РІР°РЅРёРµ РІСѓР·Р°">
-    <input type="email" placeholder="E-mail">
-    <input type="password" placeholder="РџР°СЂРѕР»СЊ">
-    <input type="password" placeholder="РџРѕРґС‚РІРµСЂРґРёС‚Рµ РїР°СЂРѕР»СЊ">
-    <button type="submit" class="registration-button">Р Р•Р“РРЎРўР РђР¦РРЇ</button>
+  <form action="Base.py" method="POST">
+    <input name="vuz" type="text" placeholder="Название вуза">
+    <input name="mail" type="email" placeholder="E-mail">
+    <input name="pas1" type="password" placeholder="Пароль">
+    <input name="pas2" type="password" placeholder="Подтвердите пароль">
+    <button type="submit" class="registration-button" action="Base.py">РЕГИСТРАЦИЯ</button>
   </form>
 </div>
 </body>
