@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="Windows-1251">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration Form</title>
 <style>
@@ -13,28 +13,28 @@
     background: #f0f0f0;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    position: relative; /* Для позиционирования логотипа */
+    position: relative; /* Р”Р»СЏ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёСЏ Р»РѕРіРѕС‚РёРїР° */
   }
 
   .header-logo {
     position: absolute;
-    top: 10px; /* Регулировка расстояния сверху */
-    left: 10px; /* Регулировка расстояния слева */
+    top: 10px; /* Р РµРіСѓР»РёСЂРѕРІРєР° СЂР°СЃСЃС‚РѕСЏРЅРёСЏ СЃРІРµСЂС…Сѓ */
+    left: 10px; /* Р РµРіСѓР»РёСЂРѕРІРєР° СЂР°СЃСЃС‚РѕСЏРЅРёСЏ СЃР»РµРІР° */
     display: flex;
     align-items: center;
   }
 
   .header-logo img {
-    height: 30px; /* Высота логотипа */
+    height: 30px; /* Р’С‹СЃРѕС‚Р° Р»РѕРіРѕС‚РёРїР° */
   }
 
   .header-logo a {
     text-decoration: none;
-    color: black; /* Цвет текста изменен на черный */
+    color: black; /* Р¦РІРµС‚ С‚РµРєСЃС‚Р° РёР·РјРµРЅРµРЅ РЅР° С‡РµСЂРЅС‹Р№ */
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
-    align-items: center; /* Центрирование текста по вертикали */
+    align-items: center; /* Р¦РµРЅС‚СЂРёСЂРѕРІР°РЅРёРµ С‚РµРєСЃС‚Р° РїРѕ РІРµСЂС‚РёРєР°Р»Рё */
   }
 
   .registration-container {
@@ -43,7 +43,7 @@
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     width: 350px;
-    margin-top: 60px; /* Дополнительное пространство для логотипа */
+    margin-top: 60px; /* Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РґР»СЏ Р»РѕРіРѕС‚РёРїР° */
   }
 
   .tab {
@@ -92,15 +92,15 @@
 </div>
 <div class="registration-container">
   <div class="tab">
-    <div><a href="login.html">ВХОД</a></div>
-    <div class="active">РЕГИСТРАЦИЯ</div>
+    <div><a href="login.html">Р’РҐРћР”</a></div>
+    <div class="active">Р Р•Р“РРЎРўР РђР¦РРЇ</div>
   </div>
-  <form action="Base.py" method="POST">
-    <input name="vuz" type="text" placeholder="Название вуза">
+  <form action="register.php" method="post">
+    <input name="vuz" type="text" placeholder="РќР°Р·РІР°РЅРёРµ РІСѓР·Р°">
     <input name="mail" type="email" placeholder="E-mail">
-    <input name="pas1" type="password" placeholder="Пароль">
-    <input name="pas2" type="password" placeholder="Подтвердите пароль">
-    <button type="submit" class="registration-button" action="Base.py">РЕГИСТРАЦИЯ</button>
+    <input name="pas1" type="password" placeholder="РџР°СЂРѕР»СЊ">
+    <input name="pas2" type="password" placeholder="РџРѕРґС‚РІРµСЂРґРёС‚Рµ РїР°СЂРѕР»СЊ">
+    <button type="submit" class="registration-button" action="register.php">Р Р•Р“РРЎРўР РђР¦РРЇ</button>
   </form>
 </div>
 </body>

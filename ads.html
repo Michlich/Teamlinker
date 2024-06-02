@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="windows-1251">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeamLinker</title>
     <link rel="stylesheet" href="styles.css">
@@ -9,45 +9,40 @@
 <body>
     
     <nav class="navbar">
-        <!-- Ваша навигационная панель остаётся без изменений -->
+        <!-- Р’Р°С€Р° РЅР°РІРёРіР°С†РёРѕРЅРЅР°СЏ РїР°РЅРµР»СЊ РѕСЃС‚Р°С‘С‚СЃСЏ Р±РµР· РёР·РјРµРЅРµРЅРёР№ -->
         <a href="index.html" class="nav-logo" class="nav-logo">
             <img src="web-svgrepo-com.svg" alt="TeamLinker Logo" class="logo-img">
             <h3>TeamLinker</h3>
         </a>
         <div class="nav-links">
-            <a href="#" id="searchTeam">Поиск командыЎ</a>
-            <div id="teamPopup" class="popup-content">
-                <p>Выберите категорию команды</p>
-                <button>Для участников</button>
-                <button>Для лидеров</button>
-            </div>
-            <a href="#">Мои объявления</a>
-            <a href="#">Объявления</a>
-            <a href="contact.html">Связаться с нами</a>
+             <a href="myads.php">РњРѕРё РѕР±СЉСЏРІР»РµРЅРёСЏ</a>
+            <a href="ads.html">РћР±СЉСЏРІР»РµРЅРёСЏ</a>
+            <a href="contact.html">РЎРІСЏР·Р°С‚СЊСЃСЏ СЃ РЅР°РјРё</a>
         </div>
         <div class="nav-auth">
-            <a href="login.html" class="auth-link">Вход</a>
-            <a href="signup.html" class="auth-button">Регистрация</a>
+            <a href="login.html" class="auth-link">Р’С…РѕРґ</a>
+            <a href="signup.html" class="auth-button">Р РµРіРёСЃС‚СЂР°С†РёСЏ</a>
         </div>
     </nav>
 
     <main>
         <div class="grid-container">
-            <div class="search-panel">
-                <input type="search" placeholder="Поиск...">
-                <button class="tab">соискатели</button>
-                <button class="tab">команды</button>
-            </div>
-            <div class="cards-container">
-                <!-- Карточки -->
+            <form class="search-panel" action='search_res.php' method='post'>
+                <input type="search" name='search' placeholder="РџРѕРёСЃРє...">
+				<input type="radio" name="course" value="1" />СЃРѕРёСЃРєР°С‚РµР»Рё <br>
+				<input type="radio" name="course" value="2" />РєРѕРјР°РЅРґС‹ <br>
+				<button action='search_res.php'>РџРѕРёСЃРє</button>
+            </form>
+            <!--<div class="cards-container">
+                 РљР°СЂС‚РѕС‡РєРё 
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
-                <!-- Повторите <div class="card"></div> для количества карточек, которое вы хотите -->
-            </div>
+                --><!-- РџРѕРІС‚РѕСЂРёС‚Рµ <div class="card"></div> РґР»СЏ РєРѕР»РёС‡РµСЃС‚РІР° РєР°СЂС‚РѕС‡РµРє, РєРѕС‚РѕСЂРѕРµ РІС‹ С…РѕС‚РёС‚Рµ 
+            </div>-->
         </div>
     </main>
 

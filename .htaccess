@@ -1,0 +1,7 @@
+#RewriteEngine On
+#Session on
+#SessionCookieName session path=/
+#SessionCryptoPassphrase secret
+#SessionUseTransID on
+#Order allow,deny
+#Allow from all

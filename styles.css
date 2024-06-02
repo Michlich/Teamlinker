@@ -194,3 +194,79 @@ html, body {
 	background-color: #393939; /* Цвет кнопки при наведении */
 	text-decoration: none; /* Убрать подчеркивание текста */
 }
+.main-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	gap: 20px; /* Расстояние между секциями */
+}
+
+.resume-section, .vacancy-section {
+	background-color: #ffffff;
+	padding: 20px;
+	width: 48%; /* Каждая секция занимает почти половину горизонтального пространства */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px; /* Отступ для каждого элемента ввода */
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button {
+	padding: 10px 15px;
+	margin-top: 20px;
+	background-color: #5551FF;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	background-color: #393939;
+}
+.vacancy-section {
+	background-color: #ffffff;
+	padding: 20px;
+	width: 48%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+}
+
+.vacancy-section label {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.vacancy-section input[type="text"], .vacancy-section textarea {
+	width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.vacancy-section textarea {
+	height: 80px; /* Высота текстовых полей для более удобного ввода информации */
+}
+
+.vacancy-section button {
+	padding: 10px 15px;
+	margin-top: 20px;
+	background-color: #5551FF;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.vacancy-section button:hover {
+	background-color: #393939;
+}
